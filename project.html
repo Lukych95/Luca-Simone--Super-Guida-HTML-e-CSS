@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <!--Normalize "css di reset"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Utile per chi accede da explorer-->
+    <meta http-equiv="X-UA-Compatible" contant="IE=edge">
+    <meta name="viewport" contenet="width=device-width; initial-scale=1">
+
+  </head>
+
+  <body>
+   <!--Modulo Header con logo e menu-->
+    <header class="header clearfix">
+      <!--Il link che contiene la nostro icona-->
+      <a href="" class="header_icon">
+
+       <!--Icona del menu-->
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+     <!--Il menu -->
+     <ul class="header_menu animate">
+       <li class="header_menu_item"><a href="portfolio.html">Home</a></li>
+       <li class="header_menu_item"><a href="project.html">Project</a></li>
+       <li class="header_menu_item"><a href="contact.html">Contact</a></li>
+       <li class="header_menu_item"><a href="dove_siamo.html">Dove siamo</a></li>
+     </ul>
+   </header>
+
+   <!--La cover -->
+   <section class="cover cover--project">  <!--Sono andato ad aggiungere il modifier-->
+     <img id="cover_project">
+     <div class="cover_filter"></div>
+     <div class="cover_descrizione">
+       <div class="cover_descrizione_copy">
+         <h1>Progetti</h1>
+         <h2>Cosa ho realizzato?</h2>
+          <a href="img/rocket" title="Freepik"></a><a href="" title="Flaticon"></a>
+
+       </div>
+     </div>
+   </section>
+
+   <!--La project -->
+   <article class="project">
+     <div class="project__copy">
+       <h2>Da aprile 2019 fino ad oggi</h2>
+       <p class="project__copy__meta">06.02.2020, in <a href="">News</a> by <a href="portfolio.html">Luca</a> </p>
+       <p>In questa sezione vi mostrerò cosa ho realizzato, prendendo spunto da internet, video tutorial su YouTube, forum e libri.</p>
+       <p>In futuro ho intenzione di realizzare progetti più complessi che comprendono sezioni di pagine che iteragiscono con l'utente finale e che siano user frindly.</p>
+
+     </div>
+   </article>
+
+<!--Le cards -->
+<section class="cards clearfix">
+  <div class="card">
+    <img class="card__image" width="360" height="" src="photo/tasto.png" alt="tasto">
+    <!--<video class="card__video" width="5000" height="260" controls>-->
+      <!--<source src="button.mp4" type="video/mp4">-->
+    </video>
+    <div class="card__copy">
+      <h3>Bottone dinamico</h3>
+      <p>Seguendo un video tutorial su Youtube ho realizzato un bottone che cambia colore di sfondo quando si passa con il mouse sopra.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card__image" width="360" height="" src="photo/portfolio.png" alt="portfolio">
+    <div class="card__copy">
+      <h3>Portfolio</h3>
+      <p>Tra i vari progetti ovviamente non poteva mancare quello più importante, cioè il portfolio. Il quale funge da tramite tra me e l'utente finale o l'azienda interessata.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card__image" width="360" height="" src="photo/menu_tendina.png" alt="menu_tendina">
+    <div class="card__copy">
+      <h3>Menu a Tendina</h3>
+      <p>Uno dei primi progetti che ho realizzato, contiste in un menu classico con più item. Uno di questi ha la particolarità di poter mostrare più opzioni che scorrono verso il basso quando si passa il puntatore del mouse.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer ">
+  <p>Copyright - Luca Simone 2020</p>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+      $(".header_icon").click(function(e){
+
+          $(".header_menu").toggleClass('is-open');
+         e.preventDefault();
+       });
+  });
+    </script>
+  </body>
+</html>

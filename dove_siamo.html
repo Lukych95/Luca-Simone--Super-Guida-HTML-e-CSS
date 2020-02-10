@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <!--Normalize "css di reset"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Utile per chi accede da explorer-->
+    <meta http-equiv="X-UA-Compatible" contant="IE=edge">
+    <meta name="viewport" contenet="width=device-width; initial-scale=1">
+
+  </head>
+
+  <body>
+   <!--Modulo Header con logo e menu-->
+   <header class="header clearfix">
+     <!--Il link che contiene la nostro icona-->
+     <a href="" class="header_icon">
+
+       <!--Icona del menu-->
+       <span></span>
+       <span></span>
+       <span></span>
+     </a>
+     <!--Il menu -->
+     <ul class="header_menu animate">
+       <li class="header_menu_item"><a href="portfolio.html">Home</a></li>
+       <li class="header_menu_item"><a href="project.html">Project</a></li>
+       <li class="header_menu_item"><a href="contact.html">Contact</a></li>
+       <li class="header_menu_item"><a href="dove_siamo.html">Dove siamo</a></li>
+     </ul>
+   </header>
+
+   <!--La cover -->
+   <section class="cover cover--dove_siamo">  <!--Sono andato ad aggiungere il modifier -->
+    <img id="cover_dove_siamo">
+     <div class="cover_filter"></div>
+     <div class="cover_descrizione">
+       <div class="cover_descrizione_copy">
+         <h1>Dove siamo</h1>
+       </div>
+     </div>
+   </section>
+
+   <!--La project -->
+   <article class="dove_siamo">
+     <div class="dove_siamo__copy">
+       <h2>Ecco dove ci troviamo</h2>
+       <p class="dove_siamo__copy__meta">Orario di apertura: 8.00-12.30 da lun-sab in <a href="">News</a> by <a href="#">Luca</a> </p>
+       <p class="dove_siamo__copy__meta">Chiusura: domenica </p>
+     <div class="google-maps">
+       <iframe class="google-maps-iframe"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.774802891501!2d8.222865715779891!3d44.04670713491319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2596f3db57001%3A0x936cf602a22a83ae!2sMorrison%20-%20*2Abeer%20*2Amusic%20*2Afood!5e0!3m2!1sit!2sit!4v1579019640133!5m2!1sit!2sit"frameborder="0" style="border:0" allowfullscreen></iframe>
+     </div>
+     </div>
+   </article>
+
+
+<footer class="footer footer--dove_siamo">
+  <p>Copyright - Luca Simone 2020</p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+
+     $(".header_icon").click(function(e){
+
+         $(".header_menu").toggleClass('is-open');
+         e.preventDefault();
+         });
+  });
+  </script>
+  </body>
+</html>

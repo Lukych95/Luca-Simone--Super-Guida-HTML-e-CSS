@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <!--Normalize "css di reset"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Font google-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Playfair+Display&display=swap" rel="stylesheet">
+    <!--Utile per immagini social-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <!--Utile per chi accede da explorer-->
+    <meta http-equiv="X-UA-Compatible" contant="IE=edge">
+    <meta name="viewport" contenet="width=device-width; initial-scale=1">
+
+  </head>
+
+  <body>
+   <!--Modulo Header con logo e menu-->
+   <header class="header clearfix">
+     <!--Il link che contiene la nostro icona-->
+     <a href="" class="header_icon">
+       <!--Icona del menu-->
+       <span></span>
+       <span></span>
+       <span></span>
+     </a>
+     <!--Il menu -->
+     <ul class="header_menu animate">
+       <li class="header_menu_item"><a href="portfolio.html">Home</a></li>
+       <li class="header_menu_item"><a href="project.html">Project</a></li>
+       <li class="header_menu_item"><a href="contact.html">Contact</a></li>
+       <li class="header_menu_item"><a href="dove_siamo.html">Dove siamo</a></li>
+     </ul>
+   </header>
+
+   <!--La cover -->
+   <section class="cover cover--contact">
+     <img id="cover_image" src="social_media_2018.jpg" alt="">
+     <div class="cover_filter"></div>
+     <div class="cover_descrizione">
+       <div class="cover_descrizione_copy">
+         <h1>Link ai miei Social</h1>
+       </div>
+     </div>
+   </section>
+
+   <!--La contact -->
+   <article class="contact">
+     <div class="contact__copy">
+       <div class="middle clearfix">
+         <a class="btn" href="https://www.facebook.com/Luca.Simone.95">
+         <i class="fab fa-facebook-f"></i>
+       </a>
+       <a class="btn" href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="btn" href="#">
+        <i class="fab fa-google"></i>
+      </a>
+      <a class="btn" href="https://www.instagram.com/lucasigismondo/?hl=it">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="btn" href="#">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+
+       </div>
+   </article>
+
+
+<footer class="footer footer--contact">
+  <p>Copyright - Luca Simone 2020</p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+
+     $(".header_icon").click(function(e){
+
+         $(".header_menu").toggleClass('is-open');
+         e.preventDefault();
+         });
+  });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+
+<!--I collegamneti-->
+    <!--Normalize "css di reset"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <!--Il collegamneto al font-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Playfair+Display&display=swap" rel="stylesheet">
+    <!--Collegamento al foglio di stile-->
+    <link rel="stylesheet" href="css/style.css">
+
+<!--I meta-->
+    <!--Utile per chi accede da explorer-->
+    <meta http-equiv="X-UA-Compatible" contant="IE=edge">
+    <!--Il viewport iniziale non deve essere scalato-->
+    <meta name="viewport" contenet="width=device-width, initial-scale=1">
+  </head>
+
+  <!--Il body -->
+  <body>
+   <!--Modulo Header con logo e menu-->
+   <header class="header clearfix">
+     <!--Il link che contiene la nostro icona-->
+     <a href="" class="header_icon">
+       <!--Icona del menu-->
+       <span></span>
+       <span></span>
+       <span></span>
+     </a>
+
+     <!--Il menu -->
+     <ul class="header_menu animate">
+       <li class="header_menu_item"><a href="portfolio.html">Home</a></li>
+       <li class="header_menu_item"><a href="project.html">Project</a></li>
+       <li class="header_menu_item"><a href="contact.html">Contact</a></li>
+       <li class="header_menu_item"><a href="dove_siamo.html">Dove siamo</a></li>
+     </ul>
+   </header>
+
+   <!--La cover -->
+   <section class="cover">
+     <div class="cover_filter"></div>
+     <div class="cover_descrizione">
+       <div class="cover_descrizione_copy">  <!--Contiene titolo, sotto titolo e la Call to action-->
+         <h1>Home page</h1>
+         <h2>Per maggiori info</h2>
+         <a href="" class="button">Call to action </a>
+       </div>
+     </div>
+   </section>
+
+<section class="cards clearfix">
+  <div class="card">
+    <img class="card__image" src="photo/book.jpg" alt="book"> <!--Immagine del libro-->
+    <div class="card__copy">
+      <h3>I miei Hobby</h3>
+      <p>Mi piace molto il mondo della programmazione, leggere e uscire con gli amici. Nel tempo libero mi dedico al codice HTML, CSS e a imparare
+         nuovi linguaggi come Javascript. In futuro vorrei appassionarmi al mondo della fotografia e videomaking oltre a quello che già porto avanti nel mio tempo libero.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card__image" src="photo/time.jpg" alt="time"> <!--Immagine del tempo-->
+    <div class="card__copy">
+      <h3>Da quanto?</h3>
+      <p>Fin da piccolo ero appassionato all'elettronica, infatti mi piaceva smontare tutto quello che potesse avere un circuito al sui interno. Successivamnete all'età di 16 anni ho inziato a scrivere alcune righe di codice. Ma solo ad aprile del 2019 all'età di 23 anni, mi sono appassionato al mondo del web design.  </p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card__image" src="photo/hobby.jpg" alt="hobby"> <!--Immagine hobby-->
+    <div class="card__copy">
+      <h3>Cosa faccio?</h3>
+      <p>Lavoro in un ristorante e nel tempo libero mi dedico al codice HTML, CSS ad arduino e alla programmazione in generale. Cerco di apprendere il più possibile del mondo del Web Design leggendo libri e guardando video tutorial su YouTube. Da poco ho iniziato a informarmi sul mondo della UX Design.</p>
+    </div>
+  </div>
+</section>
+
+<section class="banner clearfix">
+  <img class="banner__image" src="photo/me.jpg"></div>
+  <div class="banner__copy"> <!--Banner che comprende tutto tranne commenti-->
+    <div class="banner__copy__text">
+     <h3>Mi presento</h3>
+     <h4>Chi sono?</h4>
+     <p>Ciao io sono Luca, ho 24 anni fin da piccolo mi sono appassionato all'elettronica. Mi sono diplomato all'istituto tecnico superiore con indirizzo elettronico e elettrotecnica. Ho frequentato un anno di ingegneria che però non ho concluso. Ma solo dallo scorso Aprile ho iniziato ad appassionarmi al web design e ho inziato a studiare HTML e CSS come autodidatta. Vorrei specializzarmi e diventare un web developer e in futuro collaborare con un team o una startup e aprire un mio studio.</p>
+   </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p>Copyright - Luca Simone 2020</p>
+
+  <!--Per lo scroll della tedina-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+
+         $(".header_icon").click(function(e){
+
+             $(".header_menu").toggleClass('is-open');
+             e.preventDefault();
+             });
+      });
+  </script>
+
+  </body>
+</html>
